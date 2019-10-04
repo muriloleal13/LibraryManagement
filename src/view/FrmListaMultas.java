@@ -13,6 +13,7 @@ package view;
 
 import java.sql.SQLException;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -296,7 +297,8 @@ public class FrmListaMultas extends javax.swing.JFrame {
                     tblMultas.getModel().setValueAt(multa.getLivro(), row, 0);
                     tblMultas.getModel().setValueAt(arrumaDataMostrar(multa.getDataRetirada()), row, 2);
                     tblMultas.getModel().setValueAt(arrumaDataMostrar(multa.getDataDevolucao()), row, 3);
-                    tblMultas.getModel().setValueAt(multa.getValor(), row, 4);
+                    DecimalFormat df = new DecimalFormat("#,###.00");
+                    tblMultas.getModel().setValueAt("R$ " + df.format(multa.getValor()), row, 4);
                     row++;
                 }
             }else{
