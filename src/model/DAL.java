@@ -163,10 +163,10 @@ public class DAL {
                 user.setMaxLivros(user.getMaxFuncs());
             }
             user.setSenha(rs.getString("senha"));
-            if(pesquisa.equals("")){
+//            if(pesquisa.equals("")){
                 user.setLstLivros(this.livrosRetirado(user));
                 user.setLstMultas(this.getMultas(user));
-            }
+//            }
             ret.add(user);//ADICIONA NA LISTA
         }
         rs.close();
