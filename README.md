@@ -1,6 +1,8 @@
-# Biblioteca
+# Sistema de Biblioteca (Library Management)
 
-Este projeto consiste em desenvolver um sistema de biblioteca completo. 
+Este projeto consistiu em desenvolver um sistema de biblioteca completo para a disciplina de PARADIGMAS DE PROGRAMAÇÃO. 
+This project was developed to create a complete library system for a PROGRAMMING PARADIGMS course of Computer Science Program.
+
 
 Os dados são armazenados em uma base de dados relacional mysql.
 Deve ser executa o arquivo biblioteca.sql que está na pasta sql.
